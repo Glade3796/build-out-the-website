@@ -1,0 +1,14 @@
+* {
+  box-sizing: border box;
+}
+.feature {
+  height: 100vh;
+  background-image: url("./assets/fox-cub-white.jpeg");
+  background-size: cover;
+  background-position: center center;
+}
+.title {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
