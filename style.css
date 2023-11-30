@@ -1,14 +1,50 @@
 * {
   box-sizing: border box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+/* scroll-behaviour inspired by @SK*/
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  position: fixed;
+  display: flex;
+  width: 100vh;
+}
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 5vh;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 .feature {
   height: 100vh;
-  background-image: url("./assets/fox-cub-white.jpeg");
+
   background-size: cover;
   background-position: center center;
+}
+.fox-cub {
+  background-image: url("./assets/fox-cub-white.jpeg");
+}
+.fox-blur {
+  background-image: url("./assets/fox-blur.jpg");
+}
+.fox-grainy {
+  background-image: url("./assets/fox-grainy.jpg");
+}
+.fox-nap {
+  background-image: url("./assets/fox-nap.jpg");
 }
 .title {
   position: absolute;
   bottom: 50px;
   left: 50px;
 }
+
+/*@SK = https://spacey-kappa.vercel.app/*/
