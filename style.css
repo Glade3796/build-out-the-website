@@ -10,7 +10,27 @@ html {
 .header {
   position: fixed;
   display: flex;
-  width: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.433);
+  color: white;
+  z-index: 1;
+}
+.header h1 {
+  padding: 0.5rem;
+  padding: 0;
+  line-height: 1.2rem;
+}
+.underline {
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+.logo {
+  margin: 0;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 1rem;
+  margin: 1rem;
 }
 nav {
   display: flex;
@@ -20,12 +40,16 @@ nav {
 }
 nav a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-style: double;
 }
 .feature {
   height: 100vh;
-
+  position: relative;
   background-size: cover;
   background-position: center center;
 }
