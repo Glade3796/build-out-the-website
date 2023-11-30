@@ -13,7 +13,8 @@ html {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.433);
   color: white;
-  z-index: 1;
+  z-index: 1; /*just figured out that this is important */
+  align-items: center;
 }
 .header h1 {
   padding: 0.5rem;
@@ -32,18 +33,30 @@ html {
   padding: 1rem;
   margin: 1rem;
 }
+.whitespace {
+  height: 1rem;
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  top: 0;
+}
+.logo:hover {
+  cursor: pointer;
+}
 nav {
   display: flex;
   width: 100%;
   justify-content: space-around;
   padding: 5vh;
+  /* position: absolute; */
 }
 nav a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  font-size: 1.2rem;
 }
-nav a:hover {
+a:hover {
   text-decoration: underline;
   text-decoration-style: double;
 }
@@ -59,16 +72,84 @@ nav a:hover {
 .fox-blur {
   background-image: url("./assets/fox-blur.jpg");
 }
-.fox-grainy {
-  background-image: url("./assets/fox-grainy.jpg");
+.fox-smile {
+  background-image: url("./assets/fox-smile.jpg");
 }
-.fox-nap {
-  background-image: url("./assets/fox-nap.jpg");
+.fox-pounce {
+  background-image: url("./assets/fox-pounce.jpg");
 }
+
 .title {
   position: absolute;
   bottom: 50px;
   left: 50px;
 }
+/* wanted to alernate position */
+/* main:nth-child(odd) .title {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+main:nth-child(even) .title {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+} */
 
+.nav-containter {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  position: relative;
+  bottom: -0.5rem;
+}
+.feature h2 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-decoration: double;
+}
+.feature h1 {
+  font-size: 2.5rem;
+  width: 50%;
+}
+.feature a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 15 px;
+}
+
+.footer-div {
+  width: 100%;
+  height: 3rem;
+  position: relative;
+  background-color: black;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+footer h3 {
+  color: white;
+  font-weight: unset;
+  font-size: 1rem;
+}
+.bold {
+  font-weight: bold;
+}
+.dbl-underline {
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+.footer-logo {
+  display: flex;
+}
+.footer-text {
+  display: flex;
+}
 /*@SK = https://spacey-kappa.vercel.app/*/

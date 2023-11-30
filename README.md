@@ -23,4 +23,9 @@ z-index: 1; /_just figured out that this is important _/
 }
 
 !!!! remember to save both HTML and CSS or goLive wont update ^x^
-/_@SK = https://spacey-kappa.vercel.app/_/
+
+Logo div hyperlink guide from @SO1 (30/11/23)
+
+Credits:
+@SK = https://spacey-kappa.vercel.app/_/
+@SO1 = https://stackoverflow.com/questions/2188272/html-how-to-make-an-entire-div-a-hyperlink
