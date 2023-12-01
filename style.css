@@ -7,6 +7,8 @@
 html {
   scroll-behavior: smooth;
 }
+/*HEADER*/
+
 .header {
   position: fixed;
   display: flex;
@@ -60,6 +62,8 @@ a:hover {
   text-decoration: underline;
   text-decoration-style: double;
 }
+
+/*MAIN BODY*/
 .feature {
   height: 100vh;
   position: relative;
@@ -79,11 +83,20 @@ a:hover {
   background-image: url("./assets/fox-pounce.jpg");
 }
 
-.title {
+.imposed-box {
   position: absolute;
   bottom: 50px;
   left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
+section:nth-child(even) .imposed-box {
+  left: unset;
+  right: 50px;
+  text-align: right;
+}
+
 /* wanted to alernate position */
 /* main:nth-child(odd) .title {
   position: absolute;
@@ -110,20 +123,37 @@ main:nth-child(even) .title {
 }
 .feature h2 {
   font-size: 1.5rem;
-  text-decoration: underline;
-  text-decoration: double;
 }
 .feature h1 {
-  font-size: 2.5rem;
-  width: 50%;
+  font-size: 2rem;
+  text-transform: uppercase;
+  /* width: 66%; */
 }
 .feature a {
   text-decoration: none;
   color: black;
-  border: 1px solid black;
-  padding: 15 px;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 2rem 0rem;
+  max-width: 200px;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  text-transform: lowercase;
+}
+section:nth-child(even) .imposed-box a {
+  padding-left: 3rem;
+  padding-right: 2rem;
+}
+.hover-act:hover {
+  color: white;
+  background-color: black;
+}
+.imposed-box div {
+  margin-top: 1rem;
 }
 
+/*FOOTER*/
 .footer-div {
   width: 100%;
   height: 3rem;
@@ -146,10 +176,12 @@ footer h3 {
   text-decoration: underline;
   text-decoration-style: double;
 }
-.footer-logo {
+.footer-logo,
+.footer-text,
+.container {
   display: flex;
 }
-.footer-text {
-  display: flex;
+.align-center {
+  align-self: center;
 }
 /*@SK = https://spacey-kappa.vercel.app/*/
