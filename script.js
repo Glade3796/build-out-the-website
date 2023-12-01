@@ -1,3 +1,4 @@
+console.log("Welcome to FOXYspace, they future of foxes AND space!");
 //donate button//
 const button = document.getElementById("button");
 button.addEventListener("click", playVid);
