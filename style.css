@@ -30,7 +30,9 @@ html {
 .logo {
   margin: 0;
   padding: 1rem;
+  padding-right: 0;
   margin: 1rem;
+  margin-right: 0;
 }
 .whitespace {
   height: 1rem;
@@ -45,8 +47,8 @@ html {
 nav {
   display: flex;
   width: 100%;
-  justify-content: space-around;
-  padding: 5vh;
+  justify-content: space-evenly;
+  padding: 0;
 }
 nav a {
   text-decoration: none;
